@@ -25,11 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+    RBT/rbt.cpp \
+    RBT/node.cpp
 
 HEADERS += \
-        mainwindow.h \
-    definitions.h
+    definitions.h \
+    RBT/rbt.h \
+    RBT/node.h
 
 FORMS += \
         mainwindow.ui
