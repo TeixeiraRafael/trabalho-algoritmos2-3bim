@@ -25,13 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    RBT/rbt.cpp \
-    RBT/node.cpp
+    AVLT/avlt.cpp \
+    AVLT/node.cpp \
+    base.csv \
 
 HEADERS += \
     definitions.h \
-    RBT/rbt.h \
-    RBT/node.h
+    AVLT/avlt.h \
+    AVLT/node.h
 
 FORMS += \
         mainwindow.ui
