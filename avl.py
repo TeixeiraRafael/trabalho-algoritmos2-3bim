@@ -258,8 +258,13 @@ class AVL_Tree(object):
         elif seach_key > root.val:
             root.right = self.search(root.right, code)
         else:
-            for s in root.getStreets():
-                if(s.getZipCode() == code):
-                    return s
+            for street in root.getStreets():
+                if(street.getZipCode() == code):
+                    print("Dados encontrados:\n")
+                    print("CEP: " + str(street.getZipCode()))
+                    print("Rua: " + str(street.getName()))
+                    print("Bairro: " + str(street.getNbhd()))
+                    return None
+            print("Nenhum dado encontrado!")
             return None
     
