@@ -33,8 +33,8 @@ while(option != 8):
     elif(option == 3):
         print("CEP:", end=" ")
         zipcode = int(input())
-        street = myTree.search(root, zipcode)            
-
+        street = myTree.search(root, zipcode)
+        
     elif(option == 4):
         myTree.preOrder(root)
 
